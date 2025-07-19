@@ -43,8 +43,8 @@ _  /|  / _  __/   ____/ /_  /  / / __ |/ |/ /   _/_____/     / /___  / /_/ /  / 
 
     wcout << "\n";
     wcout << "                                                                                                                                                                          by: Nerostav Kuznetsov\n";
-    wcout << "https://github.com/NerostavKuznetsov/NFSMW-NK-Cheats\n";
-    wcout << "??????????????????????????????              \n";
+    wcout << "https://github.com/NerostavKuznetsov/NFMW-Console-Basic-Cheat\n";
+    //wcout << "??????????????????????????????              \n";
     wcout << " \n";
     wcout << L"╔═════════════════════════════════════╗\n";
     wcout << L"║              MAIN MENU              ║\n";

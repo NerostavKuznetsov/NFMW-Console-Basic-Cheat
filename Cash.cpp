@@ -21,21 +21,23 @@ void ManageCash(HANDLE hProcess)
     const uintptr_t BaseAddress = 0x400000; // Endereço base (fixo) do módulo speed.exe! 5 zeros = (00000)
     uintptr_t address = ResolvePointerChain(hProcess, BaseAddress + CASH_BASE_ADDRESS, CASH_OFFSETS);
 
-    while (true) {
+    while (true) 
+    {
         system("cls");
         std::wcout << L"╔══════════════════════════════════════╗\n";
         std::wcout << L"║                 Cash                 ║\n";
         std::wcout << L"╚══════════════════════════════════════╝\n";
 
-		int currentMoney = 0; // money q ja está cadastrado no jogo 
-        if (!ReadProcessMemory(hProcess, (LPCVOID)address, &currentMoney, sizeof(currentMoney), nullptr)) {
-            std::wcout << L"\n[-] Falha ao ler o dinheiro atual.\n";
+		unsigned int currentMoney = 0; // money que ja está cadastrado no jogo 
+        if (!ReadProcessMemory(hProcess, (LPCVOID)address, &currentMoney, sizeof(currentMoney), nullptr)) 
+        {
+            std::wcout << L"\n[!] Memory read failed!\n";
 			Sleep(700);
             break;
         }
 
-        std::wcout << L"\n[*] Dinheiro atual: " << currentMoney;
-        std::wcout << L"\n[*] Digite um novo valor ou pressione ESC para voltar: ";
+        std::wcout << L"\n[*] Current money: " << currentMoney;
+        std::wcout << L"\n[*] Enter a new value or press DELETE to go back: ";
 
         std::wstring input;
         while (true) {
