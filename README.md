@@ -1,0 +1,1 @@
+# NFMW Console Basic Cheat
