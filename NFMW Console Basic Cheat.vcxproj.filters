@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Cash">
+      <UniqueIdentifier>{e7da6cc8-fa4b-4062-805a-4ffa2ba31ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9669d0ff-be3c-4cb0-861f-854e707469c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nitrous">
+      <UniqueIdentifier>{1721e4bc-329d-46e0-848c-0ed400529e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Never Busted">
+      <UniqueIdentifier>{f40053ac-d42a-45f0-9c38-c584e1a0c3cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profile">
+      <UniqueIdentifier>{07dce3e6-a4a7-4a8e-ba12-1a762b66864e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cash.cpp">
+      <Filter>Cash</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Nitrous.cpp">
+      <Filter>Nitrous</Filter>
+    </ClCompile>
+    <ClCompile Include="Never Busted.cpp">
+      <Filter>Never Busted</Filter>
+    </ClCompile>
+    <ClCompile Include="Profile.cpp">
+      <Filter>Profile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cash.h">
+      <Filter>Cash</Filter>
+    </ClInclude>
+    <ClInclude Include="Nitrous.h">
+      <Filter>Nitrous</Filter>
+    </ClInclude>
+    <ClInclude Include="Never Busted.h">
+      <Filter>Never Busted</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>Profile</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
